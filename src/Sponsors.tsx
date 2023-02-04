@@ -13,11 +13,15 @@ export const Sponsors: React.FC = () => {
         mt: 4,
       }}
     >
-      <Box>
-        <img src={logoImg} loading="lazy" width="200" />
-      </Box>
       <Box sx={{}}>
         <Typography variant="h2">Our Sponsors</Typography>
+      </Box>
+      <Box>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5tSQs2xlkkK6uBs3SMv5w6wX9L-mr7d0ScA&usqp=CAU"
+          loading="lazy"
+          width="200"
+        />
       </Box>
     </Box>
   );

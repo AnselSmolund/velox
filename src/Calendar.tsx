@@ -13,11 +13,15 @@ export const Calendar: React.FC = () => {
         mt: 4,
       }}
     >
-      <Box>
-        <img src={logoImg} loading="lazy" width="200" />
-      </Box>
       <Box sx={{}}>
         <Typography variant="h2">Upcoming Race Schedule: </Typography>
+      </Box>
+      <Box>
+        <img
+          src="https://corp.formula1.com/wp-content/uploads/2022/09/Capture.jpg"
+          loading="lazy"
+          width="300"
+        />
       </Box>
     </Box>
   );
