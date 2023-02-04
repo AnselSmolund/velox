@@ -7,12 +7,9 @@ import {
   IconButton,
   Menu,
   MenuItem,
-  Button,
-  Tooltip,
-  Avatar,
   Switch,
 } from "@mui/material";
-import { AdbOutlined, MenuOutlined } from "@mui/icons-material";
+import { MenuOutlined } from "@mui/icons-material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -97,7 +94,7 @@ export const NavBar: React.FC<NavBarProps> = ({ darkMode, setDarkMode }) => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
+              {[{ label: "Home", route: "/" }, ...pages].map((page) => (
                 <MenuItem
                   key={page.label}
                   onClick={() => {
@@ -110,26 +107,6 @@ export const NavBar: React.FC<NavBarProps> = ({ darkMode, setDarkMode }) => {
               ))}
             </Menu>
           </Box>
-          <Typography
-            variant="h5"
-            noWrap
-            onClick={() => navigate("/")}
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-              ":hover": {
-                cursor: "pointer",
-                color: "#F0A868",
-              },
-            }}
-          >
-            DEUS VELOX
-          </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Typography
