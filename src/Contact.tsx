@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import logoImg from "./assets/logo.jpeg";
 
-export const Home: React.FC = () => {
+export const Contact: React.FC = () => {
   return (
     <Box
       sx={{
@@ -17,7 +17,7 @@ export const Home: React.FC = () => {
         <img src={logoImg} loading="lazy" width="200" />
       </Box>
       <Box sx={{}}>
-        <Typography variant="h2">New site coming Soon</Typography>
+        <Typography variant="h2">Contact Us</Typography>
       </Box>
     </Box>
   );
