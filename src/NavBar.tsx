@@ -12,6 +12,7 @@ import {
 import { MenuOutlined } from "@mui/icons-material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { DarkModeSwitch } from "./DarkModeSwitch";
 
 const pages = [
   { label: "About", route: "/about" },
@@ -131,8 +132,7 @@ export const NavBar: React.FC<NavBarProps> = ({ darkMode, setDarkMode }) => {
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
-            Go Dark
-            <Switch
+            <DarkModeSwitch
               checked={darkMode}
               onChange={() => setDarkMode(!darkMode)}
             />
